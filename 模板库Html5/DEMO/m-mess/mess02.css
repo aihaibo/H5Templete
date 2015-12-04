@@ -1,0 +1,18 @@
+.mess-02 .form{ margin-bottom:40px;}
+.mess-02 .form table{ width:100%;}
+.mess-02 .form table tr{ height:40px; line-height:40px;}
+.mess-02 .form table tr td.t{ width:60px; text-align:right; vertical-align:top;}
+.mess-02 .form table tr td i{ margin-left:10px; color:#ff0000; vertical-align:top;}
+.mess-02 .form table input{ padding:0 .5%; max-width:300px; width:90%; height:26px; border:1px #ccc solid;}
+.mess-02 .form table textarea{ max-width:600px; width:90%; height:100px; border:1px #ccc solid;}
+.mess-02 .form table input.btn{ margin-right:15px; width:80px; height:33px; border:none; color:#ffffff; cursor:pointer; -webkit-transition:all .3s linear; -moz-transition:all .3s linear; transition:all .15s linear;}
+.mess-02 .form table input.btn:hover{opacity:.75; filter:alpha(opacity=75);}
+.mess-02 .form table input.submit{background:#d20000;}
+.mess-02 .form table input.reset{background:#555;}
+.mess-02 ul li{ padding:15px 0 25px 0; border-top:1px #ccc solid; line-height:24px; color:#555;}
+.mess-02 ul li .t{ margin-bottom:10px;}
+.mess-02 ul li .t b{ margin-right:20px; color:#379be9;}
+.mess-02 ul li .t i{ color:#aaaaaa;}
+.mess-02 ul li .a{ margin:8px 0 0 20px; padding-top:8px; border-top:1px #bbb dotted;}
+.mess-02 ul li span{ margin-right:6px; font-weight:800;}
+

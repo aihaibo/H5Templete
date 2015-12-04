@@ -1,0 +1,7 @@
+.scroll-05-b .img-load{ height:400px;}
+.scroll-05-b .img-load i{background-size:contain;}
+.scroll-05-s{ margin-top:20px;}
+.scroll-05-s .img-load{ height:150px;}
+.scroll-05-s .swiper-slide{opacity:.6; -webkit-transition:all .15s linear; transition:all .15s linear;}
+.scroll-05-s .swiper-slide:hover{opacity:1;}
+.scroll-05-s .swiper-slide-active{opacity:1;}

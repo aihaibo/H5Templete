@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>JL-TECH</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo_ico.png" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" href="../css/init.css"/>
+<link id="linkDemo" rel="stylesheet" href="scroll01.css"/>
+<script src="../js/require.js"></script>
+<script src="../js/main.js"></script>
+<script id="scriptDemo">
+
+    require(['jquery', 'swiper'], function(){
+        $(function(){
+            $('.scroll-01').swiper({
+                lazyLoading:true,
+                spaceBetween:10,
+                nextButton:'.scroll-01 .swiper-button-next',
+                prevButton:'.scroll-01 .swiper-button-prev',
+                slidesPerView: 3,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1
+                    },
+                    992: {
+                        slidesPerView: 2
+                    },
+                    1200: {
+                        slidesPerView: 3
+                    }
+                }
+            });
+        })
+    })
+</script>
+</head>
+<body>
+<mark>
+
+    <div class="container swiper-container scroll-01">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字测试文字测试文字测试文字1</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字2</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字3</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字4</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字5</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字6</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字7</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字8</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字9</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字10</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字11</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字12</a></p></li>
+            <li class="swiper-slide"><a class="swiper-lazy img-load" href="" data-background="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字13</a></p></li>
+        </ul>
+    </div>
+
+
+</mark>
+
+
+
+<div class="demo-output">
+    <textarea></textarea>
+    <textarea></textarea>
+    <textarea></textarea>
+</div>
+<div class="demo-arrow"><i></i></div>
+
+<div class="use-info"></div>
+</body>
+</html>

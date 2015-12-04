@@ -1,0 +1,10 @@
+.list-01{max-width:1200px;}
+.list-01 li{ position:relative; padding-left:15px; border-bottom:1px dotted #ccc; line-height:36px;}
+.list-01 li:before{ position:absolute; left:0; top:17px; width:3px; height:3px; border-radius:100%; background:#999; content:"";}
+.list-01 li a{ -webkit-transition:all 0.2s linear; -moz-transition:all 0.2s linear; transition:all 0.2s linear;}
+.list-01 li:hover a{-webkit-transform:translateX(-6px); transform:translateX(-6px);}
+.list-01 li span{ display:none; text-align:right;}
+
+@media (min-width:768px){
+    .list-01 li span{ display:block;}
+}

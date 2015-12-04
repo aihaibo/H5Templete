@@ -1,0 +1,4 @@
+.list-02 li{ padding:20px; opacity:0;}
+.list-02 li.animated{ opacity:1;}
+.list-02 li a:after{ padding-bottom:70%;}
+.list-02 li p{ line-height:30px; text-align:center;}

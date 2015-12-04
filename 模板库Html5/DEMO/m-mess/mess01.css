@@ -1,0 +1,12 @@
+.mess-01{overflow-x:scroll;}
+.mess-01 table{ min-width:390px; width:100%; text-align:center;}
+.mess-01 tr td{ height:40px; background:#efefef; border-bottom:1px #fff solid; -webkit-transition:all .15s linear; transition:all .15s linear;}
+.mess-01 tr:hover td{ background:#e3e3e3;}
+.mess-01 tr.line1 td{background:#666; color:#fff;}
+.mess-01 tr td a{ color:#225c92;}
+.mess-01 tr td a:hover{text-decoration:underline;}
+
+@media (min-width:768px){
+    .mess-01{overflow:auto;}
+}
+

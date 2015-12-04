@@ -1,0 +1,7 @@
+.scroll-04{ font-size:14px; color:#515151;}
+.scroll-04 .swiper-pagination{ position:relative; bottom:0; margin-bottom:20px; border-bottom:1px #eee dotted; font-weight:800;}
+.scroll-04 .swiper-pagination span{ border-radius:0; width:33.33%; height:30px; line-height:30px; background-color:#fff;}
+.scroll-04 .swiper-pagination-bullet{opacity:1;}
+.swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet{ margin:0;}
+.scroll-04 .swiper-pagination-bullet-active{ color:#264991;}
+.scroll-04 .swiper-slide{ line-height:24px;}

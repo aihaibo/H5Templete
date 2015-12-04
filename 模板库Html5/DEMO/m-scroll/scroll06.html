@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>JL-TECH</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo_ico.png" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" href="../css/init.css"/>
+<link rel="stylesheet" href="../css/animate.css"/>
+<link id="linkDemo" rel="stylesheet" href="scroll06.css"/>
+<script src="../js/require.js"></script>
+<script src="../js/main.js"></script>
+<script id="scriptDemo">
+
+    require(['jquery', 'swiperanimate'], function(){
+        $(function(){
+            $('.scroll-06').swiper({
+                //autoplay:3000,
+                speed:800,
+                loop:true,
+                autoplayDisableOnInteraction:false,
+                onInit: function(s){
+                    s.swiperAnimateCache();
+                    s.swiperAnimate();
+                },
+                onSlideChangeEnd: function(s){
+                    s.swiperAnimate();
+                }
+            });
+        })
+    })
+</script>
+</head>
+<body>
+<mark>
+
+    <div class="container swiper-container scroll-06">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide" style="background-color:#48822b;">
+                <p class="ani" data-slide-in="at 300 from bounceInDown use ease during 700" data-slide-out="at 100 to bounceOut use ease during 1000">Jinglun Technology Development Co., Ltd.</p>
+                <p class="ani" data-slide-in="at 200 from bounceInLeft use ease during 700" data-slide-out="at 500 to bounceOut use ease during 1000">was established in 1998, registered capital of 67 million yuan</p>
+                <p class="ani" data-slide-in="at 2500 from bounceInUp use ease during 700">after 18 years of development</p>
+            </li>
+            <li class="swiper-slide" style="background-color:#532465;">
+                <p class="ani" data-slide-in="at 200 from rotateInUpLeft use ease during 300">has become a professional Internet application technology</p>
+                <p class="ani" data-slide-in="at 300 from rotateInUpRight use ease during 400">enterprise informationization and network resources integration</p>
+                <p class="ani" data-slide-in="at 400 from rotateInUpLeft use ease during 500">communication service provider</p>
+            </li>
+            <li class="swiper-slide" style="background-color:#164784;">
+                <p class="ani" data-slide-in="at 200 from zoomInDown use ease during 1000">Jinglun Technology Development Co., Ltd.</p>
+                <p class="ani" data-slide-in="at 300 from zoomInLeft use ease during 1100">was established in 1998, registered capital of 67 million yuan</p>
+                <p class="ani" data-slide-in="at 400 from zoomInRight use ease during 1200">after 18 years of development</p>
+            </li>
+            <li class="swiper-slide" style="background-color:#522818;">
+                <p class="ani" data-slide-in="at 200 from rollIn use ease during 300">has become a professional Internet application technology</p>
+                <p class="ani" data-slide-in="at 300 from rollIn use ease during 400">enterprise informationization and network resources integration</p>
+                <p class="ani" data-slide-in="at 400 from rollIn use ease during 500">communication service provider</p>
+            </li>
+        </ul>
+    </div>
+
+
+</mark>
+
+
+
+<div class="demo-output">
+    <textarea></textarea>
+    <textarea></textarea>
+    <textarea></textarea>
+</div>
+<div class="demo-arrow"><i></i></div>
+
+<div class="use-info"></div>
+</body>
+</html>

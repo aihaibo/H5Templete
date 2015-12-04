@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>JL-TECH</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo_ico.png" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" href="../css/init.css"/>
+<link rel="stylesheet" href="../css/animate.css"/>
+<link id="linkDemo" rel="stylesheet" href="scrollani03.css"/>
+<script src="../js/require.js"></script>
+<script src="../js/main.js"></script>
+<script id="scriptDemo">
+    require(['scrollanimation', 'imgload', 'jquery'], function(scrollanimation){
+        $(function(){
+
+            $('body,html').scrollTop(0);
+
+            $('.img-load').imgload({trigger_now:true});
+
+            new scrollanimation([{
+                node: $('.list-03 > li'),
+                //name: ['bounceInUp', 'bounceInDown', 'bounceInLeft', 'bounceInRight'],
+                name: 'bounceInUp',
+                function: "ease-out",
+                duration: ['.6s', '.8s', '1s', '1.2s'],
+                delay: ['.2s', '.3s', '.4s', '.5s'],
+                //random: true
+            }],{
+                threshold_bottom: -200,
+                endfunc: function(node){
+                    $(node).addClass('animated');
+                }
+            });
+        })
+    })
+</script>
+
+</head>
+<body>
+<mark>
+
+    <ul class="container list-03">
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字测试文字测试文字测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img3.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img4.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img5.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img6.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img1.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+        <li class="col-md-3 col-sm-4 col-xs-6"><a class="img-load" href="" data-original="../images/demo/list_img2.jpg"><i></i></a><p class="t-ellipsis"><a href="">测试文字</a></p></li>
+    </ul>
+
+</mark>
+
+
+
+<div class="demo-output">
+    <textarea></textarea>
+    <textarea></textarea>
+    <textarea></textarea>
+</div>
+<div class="demo-arrow"><i></i></div>
+
+<div class="use-info">
+    <p>
+        本案例运用了 <b>imgload</b> 插件 <br/>
+        该插件会用延迟加载的方式加载图片<br/>
+        imgload可选参数<br/>
+        {<br/>
+        <span>threshold       : 0,</span> 阀值，正值为距离父级容器 threshold 就开始加载  <br/>
+        <span>failure_limit   : 0,</span> 容差  <br/>
+        <span>event           : "scroll",</span> 触发事件，默认滚动条滚动触发  <br/>
+        <span>effect          : "fadeIn",</span> 图片加载成功后呈现方式  <br/>
+        <span>container       : window,</span> 图片滚动的父级容器，默认为window  <br/>
+        <span>data_attribute  : "original",</span> 图片路径存放的属性名，默认为"data-original"  <br/>
+        <span>data_bg         : "bg",</span> 若有个别图片需要不同的展现方式，可个别设值属性"data-bg"   <br/>
+        <span>skip_invisible  : false,</span> 跳过隐藏元素中的图片加载   <br/>
+        <span>appear          : null,</span> 图片加载前触发函数  <br/>
+        <span>load            : null,</span> 图片加载成功后触发函数  <br/>
+        <span>bgsize          : "normal",</span> 图片展现方式"normal"、"contain"、"cover"，默认为"normal"  <br/>
+        <span>childNode       : "i",</span> 图片所加载的容器  <br/>
+        <span>trigger_now     :false</span> 是否立即出发图片加载  <br/>
+        }<br/>
+    </p>
+
+    <p>
+        -------------------------------<br>
+        <i>.list-02 li a:after</i> 样式中的 padding-bottom:70% 表示高度为宽度的70%，这样可以等比缩放图片<br/>
+        如果需要设定固定高度图片，在 <i>.list-02 li a</i> 中给高度一个定值，则会覆盖  :after 中的高度
+    </p>
+
+</div>
+</body>
+</html>

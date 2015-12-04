@@ -1,0 +1,38 @@
+.nav-collapse{overflow:hidden; height:0px;}
+.nav-collapse ul{ text-align:center; font-size:0;}
+.nav-collapse ul li{ height:45px; background:#aaaaaa; line-height:45px; font-size:12px; border-bottom:1px #bbb solid;}
+.nav-collapse ul li a{ display:block; color:#ffffff; -webkit-transition:all .15s linear; -moz-transition:all .15s linear; transition:all .15s linear;}
+.nav-collapse ul li:hover a{ background:#999999;}
+.nav-collapse ul li.on a{ background:#999999;}
+.nav-collapse-search{ position:relative; padding-top:5px; height:45px; background:#eee; text-align:center;}
+.nav-collapse-search .search-box{ z-index:100; margin:0 auto; width:70%;}
+.nav-collapse-search .search-box.mask{ display:block;}
+.nav-collapse-search input{ float:left; width:80%; height:35px; border:2px #999 solid; vertical-align:middle;}
+.nav-collapse-search button{ float:left; width:20%; height:35px; background:#999; color:#ffffff; vertical-align:middle;}
+.nav-collapse-search-button{ display:none; width:45px; height:inherit; background:url(images/search-ico.png) center no-repeat #999999; cursor:pointer;}
+.nav-collapse-search-button.mask{ position:fixed; left:0; top:0; width:100%; height:100%; background:#000; opacity:0.7; filter:alpha(opacity=70);}
+.nav-collapse-button{ position:absolute; right:8px; top:8px; background:#eeeeee; text-align:center; cursor:pointer; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select:none; -moz-user-select:none; user-select:none;}
+.nav-collapse-button button{display:inline-block; width:40px; height:35px;  text-align:center; outline:none;}
+.nav-collapse-button i{ position:relative; display:inline-block; width:70%; height:50%; border-top:2px #555 solid; border-bottom:2px #555 solid; -webkit-transition:all .15s linear; -moz-transition:all .15s linear; transition:all .15s linear;}
+.nav-collapse-button i:before{ position:absolute; left:0; top:50%; margin-top:-1px; width:100%; height:2px; background-color:#555; content:"";}
+.nav-collapse-button.active i{ height:30%; -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); transform:rotate(90deg);}
+
+
+@media (min-width:768px){
+    header .logo{ float:left;}
+    .nav-collapse{ height:auto;}
+    .nav-collapse .n1{ margin-left:20px; float:left;}
+    .nav-collapse ul li{ display:inline-block; border-right:1px #fff solid;}
+    .nav-collapse ul li a{ padding:0 22px;}
+    .nav-collapse-button{ display:none;}
+
+    .nav-collapse-search{ float:right; padding-top:0; background:none;}
+    .nav-collapse-search .search-box{ display:none; position:absolute; right:0; top:5px; width:230px;}
+    .nav-collapse-search-button{ display:block;}
+}
+
+@media (min-width:1200px){
+    .nav-collapse-search{ padding-top:5px;}
+    .nav-collapse-search .search-box{ display:block;}
+    .nav-collapse-search-button{ display:none;}
+}

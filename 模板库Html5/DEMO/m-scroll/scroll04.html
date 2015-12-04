@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>JL-TECH</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo_ico.png" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" href="../css/init.css"/>
+<link id="linkDemo" rel="stylesheet" href="scroll04.css"/>
+<script src="../js/require.js"></script>
+<script src="../js/main.js"></script>
+<script id="scriptDemo">
+
+    require(['jquery', 'swiper'], function(){
+        $(function(){
+            var scroll04Title = [];
+
+            $('.scroll-04 > .swiper-pagination > span').each(function(){
+                scroll04Title.push($(this).html())
+            })
+
+            $('.scroll-04').swiper({
+                pagination:".scroll-04 .swiper-pagination",
+                paginationClickable: true,
+                paginationBulletRender: function (index, className) {
+                    return '<span class="' + className + '">' + scroll04Title[index] + '</span>';
+                }
+            });
+        })
+    })
+</script>
+</head>
+<body>
+<mark>
+
+    <div class="container swiper-container scroll-04">
+        <div class="swiper-pagination">
+            <span>测试文字1</span>
+            <span>测试文字2</span>
+            <span>测试文字3</span>
+        </div>
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">京伦科技开发有限公司成立于1998年，注册资本6700万元，经过十八年的发展，已成为一家专业的互联网应用技术、企业信息化及网络资源整合传播服务提供商。一直以来服务于各大中型及知名企业，为其提供高品质的网站建设、数字创意、应用开发、系统集成及新媒体营销解决方案等服务，多次获得客户嘉奖</li>
+            <li class="swiper-slide">伴随着中国经济的蓬勃发展和企业信息化的推进，京伦科技现已在全国成立了三家直属分公司，员工总数逾300人，拥有设计师、技术工程师100多人，成为华中地区规模庞大、实力雄厚的互联网应用技术、企业信息化及网络资源整合传播服务提供商。</li>
+            <li class="swiper-slide">京伦科技开发有限公司是《湖北省高新技术企业》 《双软认证企业》 《武汉信息技术外包服务首批认证单位》 《湖北省软件行业协会常务理事单位》 《中国信用建设促进委员会重信用企业》 《武汉市服务外包行业协会会员单位》 ，并已通过CMMI3及ISO9001:2008质量管理体系认证，服务项目多次被评为湖北省优秀信息化解决方案和优秀软件产品。</li>
+        </ul>
+    </div>
+
+
+</mark>
+
+
+
+<div class="demo-output">
+    <textarea></textarea>
+    <textarea></textarea>
+    <textarea></textarea>
+</div>
+<div class="demo-arrow"><i></i></div>
+
+<div class="use-info"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.scroll-02 .img-load{ height:200px;}
+
+@media (min-width:768px){
+    .scroll-02 .img-load{ height:300px;}
+}
+
+@media (min-width:992px){
+    .scroll-02 .img-load{ height:380px;}
+}
+
+@media (min-width:1200px){
+    .scroll-02 .img-load{ height:450px;}
+}

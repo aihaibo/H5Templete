@@ -1,0 +1,4 @@
+.scroll-06 .swiper-slide{ height:400px;}
+.scroll-06 .swiper-slide p{ line-height:30px; text-align:center; font-size:40px; font-family:"Times New Roman"; line-height:70px; color:#fff;}
+.scroll-06 .swiper-slide p:first-child{ margin-top:80px;}
+.scroll-06 .swiper-slide:nth-child(2) p:nth-child(3){ margin-top:-80px;}

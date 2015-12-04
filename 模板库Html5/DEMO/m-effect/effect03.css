@@ -1,0 +1,8 @@
+.effect-03{max-width:1200px;}
+.effect-03 li{ padding:20px;}
+.effect-03 li a:after{ padding-bottom:70%;}
+.effect-03 li b{ position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, .5);}
+.effect-03 li b span{ display:block; position:relative; top:50%; padding-top:5px; margin-top:-24px; height:48px; text-align:center; line-height:18px; font-weight:400; text-transform:uppercase; color:#eee;}
+.effect-03 li b span:before, .effect-03 li b span:after{ position:absolute; left:50%; margin-left:-45px; width:90px; height:1px; background-color:#f2f2f2; content:"";}
+.effect-03 li b span:before{ top:0; transition:all .3s ease-in-out;}
+.effect-03 li b span:after{ bottom:0; transition:all .5s ease-in-out;}

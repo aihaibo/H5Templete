@@ -1,0 +1,7 @@
+.final-page{}
+.final-page .art-title{ margin-bottom:30px; padding-bottom:20px; border-bottom:1px #ddd dotted; text-align:center;}
+.final-page .art-title h3{ font-size:17px; color:#4d5260;}
+.final-page .art-title .info{ margin-top:15px; font-size:12px; color:#aaa;}
+.final-page .art-title .info span{ display:inline-block; margin:0 10px;}
+.final-page p{ margin-bottom:10px; line-height:24px; text-indent:2em;}
+.final-page img{ display:block; margin:0 auto; max-width:100%;}

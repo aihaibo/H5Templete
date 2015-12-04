@@ -1,0 +1,16 @@
+.page-turn-02{ margin-top:40px; text-align:center;}
+.page-turn-02 a{ display:inline-block; position:relative; vertical-align:middle; margin:0 1px; width:36px; height:36px; border:1px #c1c1c1 solid; background:#f7f7f7; line-height:35px; text-align:center;-webkit-transition:all .15s linear; transition:all .15s linear;}
+.page-turn-02 a.prev:before{ position:absolute; left:14px; top:12px; border-top:6px transparent solid; border-bottom:6px transparent solid; border-right:6px #4e4e4e solid; content:"";}
+.page-turn-02 a.next:before{ position:absolute; left:16px; top:12px; border-top:6px transparent solid; border-bottom:6px transparent solid; border-left:6px #4e4e4e solid; content:"";}
+.page-turn-02 span{ margin-left:17px;}
+.page-turn-02 input{ width:32px; height:36px; padding:0 4px; border:1px #c1c1c1 solid;}
+.page-turn-02 a.go{ font-family:Georgia; color:#7f7f7f;}
+.page-turn-02 a.num{}
+.page-turn-02 a.num.on{ background:#0279b1; border:1px #0279b1 solid; color:#ffffff;}
+.page-turn-02 a.num:hover{ background:#0279b1; border:1px #0279b1 solid; color:#ffffff;}
+.page-turn-02 a.go:hover{border:1px #0279b1 solid; color:#0279b1;}
+.page-turn-02 a.prev:hover{ border:1px #0279b1 solid;}
+.page-turn-02 a.prev:hover:before{ border-right:6px #0279b1 solid;}
+.page-turn-02 a.next:hover{ border:1px #0279b1 solid;}
+.page-turn-02 a.next:hover:before{ border-left:6px #0279b1 solid;}
+

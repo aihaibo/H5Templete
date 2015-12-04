@@ -1,0 +1,5 @@
+.list-02{max-width:1200px;}
+.list-02 li{ padding:20px;}
+.list-02 li a:after{ padding-bottom:70%;}
+.list-02 li p{ line-height:30px; text-align:center;}
+.list-02 li p a{}

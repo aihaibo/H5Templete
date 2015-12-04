@@ -1,0 +1,6 @@
+.article-turn-01{ margin-top:40px; padding:15px 25px; background:#eeeeee;}
+.article-turn-01 > div{ width:45%;}
+.article-turn-01 .fr{ text-align:right;}
+.article-turn-01 a{ display:block; font-size:14px; line-height:18px; color:#6e6e6e;}
+.article-turn-01 a span{ margin-left:5px; -webkit-transition:all .15s linear; transition:all .15s linear;}
+.article-turn-01 a:hover span{text-decoration:underline; color:#0279b1;}

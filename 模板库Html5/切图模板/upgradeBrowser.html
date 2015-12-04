@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>updateBrowser</title>
+<style>
+*{ margin:0 auto; padding:0;}
+html{ height:100%;}
+body{ background:#FFF; width: 100%; height: 100%; font-family:微软雅黑, Arial, sans-serif, Helvetica, Arial, sans-serif; cursor:default;}
+a{ text-decoration:none; cursor:pointer; color:#535353;}
+img{ border:none;}
+li{ list-style:none;}
+.wrap{ height: 100%;}
+.selectBrowser{ width: 100%; height: 100%; position: relative;}
+.selectBrowser li{ position: absolute; top: 0; width: 20%; height: 100%;}
+.selectBrowser li .center{ color: #fff; text-align:center; top: 25%; position: absolute; width: 100%;}
+.selectBrowser li .center span{ width: 100px; height: 100px; display: block; margin-bottom: 30px; background:url(images/update/browsers-bg.png);}
+.selectBrowser li .center p{ font-size: 20px; font-weight: 800; margin-bottom: 10px;}
+.selectBrowser li .center i{ font-size: 14px; font-style:normal;}
+.selectBrowser li .download{ position: absolute; width: 100%; bottom: 25%; text-align:center; color: #fff; display: none;}
+.selectBrowser li .download a{ display: block; width: 50%; height: 40px; line-height: 40px; font-weight: 800; color: #fff; border-radius:25px; border:3px #fff solid; margin-top: 100px; margin-bottom: 13px;}
+.selectBrowser li .download p{ font-size: 12px;}
+.chrome{ left: 0; background:#f2b635;}
+.selectBrowser li.chrome .center span{ background-position:0 0;}
+.selectBrowser li.chrome .center span.hover{ background:url(images/update/browsers-bg.png) 0 -100px;}
+.selectBrowser li.chrome .download a:hover{ background:#fff; color:#f2b635;}
+.firefox{ left: 20%; background:#f19a2a;}
+.selectBrowser li.firefox .center span{ background-position:-100px 0;}
+.selectBrowser li.firefox .center span.hover{ background-position:-100px -100px;}
+.selectBrowser li.firefox .download a:hover{ background:#fff; color:#f19a2a;}
+.se360{ left: 40%; background:#00caff;}
+.selectBrowser li.se360 .center span{ background-position:-200px 0;}
+.selectBrowser li.se360 .center span.hover{ background-position:-200px -100px;}
+.selectBrowser li.se360 .download a:hover{ background:#fff; color:#00caff;}
+.sougou{ left: 60%; background:#00a0e6;}
+.selectBrowser li.sougou .center span{ background-position:-300px 0;}
+.selectBrowser li.sougou .center span.hover{ background-position:-300px -100px;}
+.selectBrowser li.sougou .download a:hover{ background:#fff; color:#00a0e6;}
+.ie{ left: 80%; background:#f25648;}
+.selectBrowser li.ie .center span{ background-position:-400px 0;}
+.selectBrowser li.ie .center span.hover{ background-position:-400px -100px;}
+.selectBrowser li.ie .download a:hover{ background:#fff; color:#f25648;}
+.available{ width: 100%; height: 25px; position: absolute; bottom: 70px; text-align:center; color:#fff;}
+.available p{ font-size: 13px; margin-bottom: 10px;}
+.available li{ position:relative; display:inline-block; margin:0 5px; width: 25px; height: 25px; background:url(images/update/operatingsystems-bg.png); text-align:center;}
+.available li span{ display:none; font-size: 12px;}
+.available .windows{ background-position:0 0;}
+.available .mac{ background-position:-25px 0;}
+.available .linux{ background-position:-50px 0;}
+.update_tips{ width: 100%; height: 50px; line-height: 50px; position: absolute; top: 0; left: 0; background:#f6c354; color: #fff; font-weight: 800; text-align:center;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<!--[if IE 6]> 
+<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+<script>DD_belatedPNG.fix('span');</script>  
+<![endif]--> 
+<script>
+$(function(){
+	if(navigator.userAgent.indexOf("MSIE 6.0") > 0 ||navigator.userAgent.indexOf("MSIE 7.0") > 0){
+		$('.available li').css({'background':'none','display':'inline','width':'auto'}).children('span').show();
+	}
+	
+	$('.selectBrowser li').hover(function(){
+		$(this).children('.download').stop(true,true).fadeIn(300).siblings('.center').children('span').addClass('hover');
+	},function(){
+		$(this).children('.download').stop(true,true).fadeOut(300).siblings('.center').children('span').removeClass('hover');
+	})
+})
+</script>
+</head>
+
+<body>
+	<div class="wrap">
+    	<ul class="selectBrowser">
+        
+        	<!--谷歌浏览器-->
+        	<li class="chrome">
+            	<div class="center">
+                	<span></span>
+                    <p>谷歌浏览器</p>
+                    <i>时尚的宠儿</i>
+                </div>
+                <div class="download">
+                	<a href="http://www.google.cn/chrome/" target="_blank">官网下载</a>
+                    <p>版本号：38</p>
+                </div>
+                <div class="available">
+                	<p>适用平台</p>
+                    <ul>
+                        <li title="windows" class="windows"><span>windows</span></li>                    
+                        <li title="mac os" class="mac"><span>mac os</span></li>
+                        <li title="linux" class="linux"><span>linux</span></li>
+                    </ul>     
+                </div>                        
+            </li>
+            
+            <!--火狐浏览器-->
+            <li class="firefox">
+            	<div class="center">
+                	<span></span>
+                    <p>火狐浏览器</p>
+                    <i>程序开发必备</i>
+                </div>
+                <div class="download">
+                	<a href="http://www.firefox.com.cn/" target="_blank">官网下载</a>
+                    <p>版本号：33</p>
+                </div>
+                <div class="available">
+                	<p>适用平台</p>
+                    <ul>
+                        <li title="windows" class="windows"><span>windows</span></li>                    
+                        <li title="mac os" class="mac"><span>mac os</span></li>
+                        <li title="linux" class="linux"><span>linux</span></li>
+                    </ul>     
+                </div>
+            </li>
+            
+            <!--360浏览器-->
+            <li class="se360">
+            	<div class="center">
+                	<span></span>
+                    <p>360浏览器</p>
+                    <i>双核浏览器</i>
+                </div>
+                <div class="download">
+                	<a href="http://se.360.cn/" target="_blank">官网下载</a>
+                    <p>版本号：7</p>
+                </div>
+                <div class="available">
+                	<p>适用平台</p>
+                    <ul>
+                        <li title="windows" class="windows"><span>windows</span></li>
+                    </ul>     
+                </div>
+            </li>
+            
+            <!--搜狗浏览器-->
+            <li class="sougou">
+            	<div class="center">
+                	<span></span>
+                    <p>搜狗浏览器</p>
+                    <i>双核浏览器</i>
+                </div>
+                <div class="download">
+                	<a href="http://ie.sogou.com/" target="_blank">官网下载</a>
+                    <p>版本号：5</p>
+                </div>
+                <div class="available">
+                	<p>适用平台</p>
+                    <ul>
+                        <li title="windows" class="windows"><span>windows</span></li>                    
+                    </ul>     
+                </div>
+            </li>
+            
+            <!--IE浏览器-->
+            <li class="ie">
+            	<div class="center">
+                	<span></span>
+                    <p>IE浏览器</p>
+                    <i>老牌浏览器</i>
+                </div>
+                <div class="download">
+                	<a href="http://windows.microsoft.com/zh-cn/internet-explorer/make-ie-default-browser#ie=ie-11" target="_blank">官网下载</a>
+                    <p>版本号：11</p>
+                </div>
+                <div class="available">
+                	<p>适用平台</p>
+                    <ul>
+                        <li title="windows" class="windows"><span>windows</span></li>                    
+                    </ul>     
+                </div>
+            </li>
+        </ul>
+        
+        <!--升级提示-->
+        <div class="update_tips">
+        	为了更好的浏览体验，建议您升级浏览器！
+        </div>
+    </div>
+</body>
+</html>

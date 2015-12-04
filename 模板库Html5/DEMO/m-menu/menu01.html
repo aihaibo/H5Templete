@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>JL-TECH</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo_ico.png" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<link rel="stylesheet" href="../css/init.css"/>
+<link id="linkDemo" rel="stylesheet" href="menu01.css"/>
+<script src="../js/require.js"></script>
+<script src="../js/main.js"></script>
+<script id="scriptDemo">
+
+    require(['jquery', 'navcollapse'], function(){
+        $(function(){
+            $('.nav-collapse').navcollapse();
+        })
+    })
+</script>
+</head>
+<body>
+<mark>
+
+
+    <div class="nav-collapse-button"><button><i></i></button></div>
+    <nav class="nav-collapse">
+        <ul class="container">
+            <li><a href="">首页</a></li>
+            <li><a href="">测试文字一</a></li>
+            <li><a href="">测试文字一</a></li>
+            <li><a href="">测试文字三</a></li>
+            <li><a href="">测试文字四</a></li>
+        </ul>
+    </nav>
+
+
+
+</mark>
+
+
+
+<div class="demo-output">
+    <textarea></textarea>
+    <textarea></textarea>
+    <textarea></textarea>
+</div>
+
+<div class="demo-arrow"><i></i></div>
+
+<div class="use-info">
+    <p><b>navcollapse</b> 插件只是用来控制导航的展开关闭状态，具体样式需要自己去编写</p>
+    <p><i>.nav-collapse</i> 与 <i>.nav-collapse-button</i> 需要在同一个层级</p>
+    <p>可选参数 <br/>
+        {<br/>
+        <span>animate: 		true,</span> 是否运用动画<br/>
+        <span>speed: 			300,</span> 动画时间<br/>
+        <span>fold:			true,</span> 窄屏导航条的默认展开状态<br/>
+        <span>navbtn: 		"-button",</span> 导航开关末尾追加Class<br/>
+        <span>close: 			"closed",</span> 导航条关闭Class<br/>
+        <span>open: 			"opend",</span> 导航条打开Class<br/>
+        <span>active:			"active"</span> 导航条开关追加Class<br/>
+        }
+    </p>
+
+</div>
+
+</body>
+</html>

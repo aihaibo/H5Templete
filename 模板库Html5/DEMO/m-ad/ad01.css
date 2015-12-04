@@ -1,0 +1,13 @@
+.side-contact{ position:fixed; right:0; top:50%; margin-top:-160px;}
+.side-contact ul{ text-align:center; box-shadow:0 0 25px rgba(0, 0, 0, .25);}
+.side-contact ul li{ width:75px; height:85px; border-bottom:1px #eee solid;}
+.side-contact ul li a{ display:block; padding-top:10px; height:inherit;}
+.side-contact ul li i{ display:inline-block; margin-bottom:3px; width:46px; height:46px; border-radius:100%; text-align:center; font-size:0; background:#000;}
+.side-contact ul li i:before{ display:inline-block; width:0; height:100%; vertical-align:middle; content:"";}
+.side-contact ul li i svg{ vertical-align:middle;}
+.side-contact li:nth-child(1){ padding-top:5px; height:65px; color:#ffffff; background-color:#9cb8e2;}
+.side-contact li:nth-child(2) i{ background-color:#f4a955;}
+.side-contact li:nth-child(3) i{ background-color:#e99584;}
+.side-contact li:nth-child(4) i{ background-color:#8fcc72;}
+.side-contact li p{transition:all .1s linear;}
+.side-contact li:hover:nth-child(n+2) p{ color:#ff6800;}

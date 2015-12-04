@@ -1,0 +1,5 @@
+.list-03{ overflow:hidden;}
+.list-03 li{ padding:20px; opacity:0;}
+.list-03 li.animated{ opacity:1;}
+.list-03 li a:after{ padding-bottom:70%;}
+.list-03 li p{ line-height:30px; text-align:center;}

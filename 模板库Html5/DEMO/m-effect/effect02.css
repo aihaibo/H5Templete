@@ -1,0 +1,21 @@
+.effect-02{max-width:1200px;}
+.effect-02 li{ padding:20px;}
+.effect-02 li a:after{ padding-bottom:70%;}
+.effect-02 li a i{transition:transform 1s;}
+.effect-02 li a b{ position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(45, 45, 45, .85); opacity:0; transition:opacity .4s;}
+.effect-02 li a b span{ display:block; position:absolute; top:50%; left:50%; margin-left:-20px; margin-top:-45px; width:40px; height:40px; background-image:url(../svg/demo/ico01.svg); background-size:40px 80px; transition:all .25s ease-out;}
+.effect-02 li a b em{ display:block; position:relative; top:50%; margin-top:10px; height:27px; line-height:27px; font-family:Arial; text-align:center; font-weight:400; color:#ffffff;}
+.effect-02 li a b em:before, .effect-02 li a b em:after{ position:absolute; left:50%; margin-left:-45px; width:90px; height:1px; background-color:#f2f2f2; content:"";}
+.effect-02 li a b em:before{ top:0; transition:all .3s ease-in-out;}
+.effect-02 li a b em:after{ bottom:0; transition:all .5s ease-in-out;}
+
+.effect-02 li a:hover i{transform:scale(1.2);}
+.effect-02 li a:hover b{ opacity:1;}
+.effect-02 li a:hover b span{ background-position:0 -40px; transform:rotate(-90deg);}
+.effect-02 li a:hover b em:before, .effect-02 li a:hover b em:after{ margin-left:-2px; width:4px;}
+
+
+
+
+
+
