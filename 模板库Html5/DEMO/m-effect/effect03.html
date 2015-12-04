@@ -18,20 +18,22 @@
             $(function(){
                 $('.img-load').imgload({bgsize:"cover"});
 
-                $(".effect-03 li").bind("mouseenter mouseleave",function(e) {
-                    var w = $(this).width();
-                    var h = $(this).height();
-                    var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+                $(".effect-03").delegate("li > a", "mouseenter mouseleave",function(e) {
+                    var w = $(this).width(),
+                        h = $(this).height(),
+                        d = Math.round((((Math.atan2((e.pageY - $(this).offset().top - (h / 2)) * (h > w ? (w / h) : 1), (e.pageX - $(this).offset().left - (w / 2)) * (w > h ? (h / w) : 1)) * (180 / Math.PI)) + 180) / 90) + 3) % 4,
+                        c = $(this).children('b');
 
-                    var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
-
-                    var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
-                    //var eventType = e.type;
-                    //var dirName = new Array('上方','右侧','下方','左侧');
-                    if(e.type == 'mouseenter'){console.log(dirName[direction])
-                        //$(this).html(dirName[direction]+'进入');
-                    }else{console.log(dirName[direction])
-                        //$(this).html(dirName[direction]+'离开');
+                    if(e.type == 'mouseenter'){
+                        c.css('transform', function(){
+                            $(this).removeClass('tran');
+                            return 'translate3d(' + (d % 2 === 0 ? 0 : d === 3 ? '-100%' : '100%') + ',' +  (d % 2 === 0 ? d === 0 ? '-100%' : '100%' : 0) + ', 0)';
+                        }).css('transform', function(){
+                            $(this).addClass('tran');
+                            return 'translate3d(0,0,0)';
+                        })
+                    }else{
+                        c.css('transform', 'translate3d(' + (d % 2 === 0 ? 0 : d === 3 ? '-100%' : '100%') + ', ' + (d % 2 === 0 ? d === 0 ? '-100%' : '100%' : 0) +  ',0)');
                     }
                 });
 
