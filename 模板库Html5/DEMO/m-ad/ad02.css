@@ -1,0 +1,6 @@
+.float-ad{ position:fixed; left:0; top:0; width:120px; height:80px; background-position:center; background-repeat:no-repeat; background-color:#eee; background-size:cover;}
+.float-ad i{ position:absolute; right:-8px; top:-8px; width:21px; height:21px; border-radius:100%; border:1px #777 solid; background-color:#fff; transition:all .2s ease-out;}
+.float-ad i:hover{transform:rotate(180deg);}
+.float-ad i:before, .float-ad i:after{ position:absolute; left:4px; top:9px; width:11px; height:1px; background-color:#777; content:"";}
+.float-ad i:before{ transform:rotate(45deg);}
+.float-ad i:after{ transform:rotate(-45deg);}
