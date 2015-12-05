@@ -14,7 +14,7 @@
     <script src="../js/require.js"></script>
     <script src="../js/main.js"></script>
     <script id="scriptDemo">
-        require(['jquery', 'imgload'], function(){
+        require(['jquery', 'imgload', 'attributesupport'], function(){
             $(function(){
                 $('.img-load').imgload({bgsize:"cover"});
 
@@ -25,15 +25,15 @@
                         c = $(this).children('b');
 
                     if(e.type == 'mouseenter'){
-                        c.css('transform', function(){
+                        c.css($.attributes.transform, function(){
                             $(this).removeClass('tran');
                             return 'translate3d(' + (d % 2 === 0 ? 0 : d === 3 ? '-100%' : '100%') + ',' +  (d % 2 === 0 ? d === 0 ? '-100%' : '100%' : 0) + ', 0)';
-                        }).css('transform', function(){
+                        }).css($.attributes.transform, function(){
                             $(this).addClass('tran');
                             return 'translate3d(0,0,0)';
                         })
                     }else{
-                        c.css('transform', 'translate3d(' + (d % 2 === 0 ? 0 : d === 3 ? '-100%' : '100%') + ', ' + (d % 2 === 0 ? d === 0 ? '-100%' : '100%' : 0) +  ',0)');
+                        c.css($.attributes.transform, 'translate3d(' + (d % 2 === 0 ? 0 : d === 3 ? '-100%' : '100%') + ', ' + (d % 2 === 0 ? d === 0 ? '-100%' : '100%' : 0) +  ',0)');
                     }
                 });
 
